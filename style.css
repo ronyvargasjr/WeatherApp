@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(45, 87, 124);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex: 1;
+}
+
+.weather_container p{
+    margin: 5px;
+}
+
+.temperature{
+    font-size: 4rem;}
+
+.location{
+    font-size: 2.5rem;
+}
+
+#when{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 10px
+}
+
+.weather_condition{
+    font-size: 1.5rem;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex: 0;
+}
+
+.search_area{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_bar{
+    background-color: rgb(129, 184, 233);
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex: 8;
+    padding: 10px;
+    max-width: 300vh;
+    font-size: 3rem;
+    border: 0;
+}
+
+button{
+    background-color: rgb(78, 136, 187);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex: 2;
+    padding: 20px;
+    font-size: 3rem;
+}
