@@ -37,10 +37,19 @@ const fetchResults = async (targetLocation) => {
     console.log(`Time is: ${time}`); //Tests time outputs
     timeElement.textContent = `${time}`;
 
-    //let day = 
+    let localTime = data.location.localtime;
+    let dateObj = new Date(localTime);
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let dayName = days[dateObj.getDay()];
+    dayElement.textContent = `${dayName}`;
 
     let date = data.location.localtime.split(" ")[0]; //splits the string into two parts - data and time - and select the first part
     console.log(`Date is: ${date}`); //Tests date outputs
+    dateElement.textContent = `${date}`;
+
+    let condition = data.current.condition.text;
+    console.log(`Condition is: ${condition}`);
+    conditionElement.textContent = `${condition}`;
 }
 
 function searchLocation(search) {
