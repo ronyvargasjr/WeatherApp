@@ -1,7 +1,7 @@
 //http://api.weatherapi.com/v1/current.json?key=3d0547ca221b4069a4622147251910&q=New York City&aqi=no
 
-const temperatureElement = document.getElementsByClassName("temperature")[0];
-const locationElement = document.getElementById("where");
+const temperatureElement = document.querySelector(".temperature p");
+const locationElement = document.querySelector(".location p");
 //const timeElement = document.getElementsByClassName("time")[0]; //Using this method would shift the element
 const timeElement = document.querySelector(".time p") 
 const dayElement = document.querySelector(".day p");
@@ -59,6 +59,8 @@ function searchLocation(search) {
     target = searchElement.value;
 
     fetchResults(target);
+
+    searchElement.value = ""; //Clear the search bar after search
 
 }
 

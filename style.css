@@ -1,23 +1,40 @@
-body{
-    background-color: rgb(45, 87, 124);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    color: white;
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    flex: 1;
+    min-height: 90vh;
+    background: rgb(45, 87, 124);
+    font-family: helvetica;
+    background-image: url(images/abstract-landscape-red-alpenglow-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 520px;
+    background: transparent;
+    border: 2px solid ;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
 }
 
 .weather_container p{
-    margin: 5px;
+    padding: 0px 30px 10px 30px;
 }
 
-.temperature{
-    font-size: 4rem;}
+
+.temperature p{
+    font-size: 4rem;
+    margin-top: 40px;
+}
+    
 
 .location{
     font-size: 2.5rem;
@@ -26,42 +43,41 @@ body{
 #when{
     font-size: 1.5rem;
     display: flex;
-    gap: 10px
+    gap: 10px;
+
 }
 
 .condition{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    margin-bottom: 40px;
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    flex: 0;
-}
 
 .search_area{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    margin: 0;
+    padding: 0;    
+    
 }
 
 .search_bar{
-    background-color: rgb(129, 184, 233);
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    flex: 8;
-    padding: 10px;
-    max-width: 300vh;
-    font-size: 3rem;
-    border: 0;
+    background: transparent;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 30px;
+    border: 1px solid;
+}
+
+.search_bar::placeholder{
+    color: rgb(49, 49, 49);
 }
 
 button{
-    background-color: rgb(78, 136, 187);
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    flex: 2;
-    padding: 20px;
-    font-size: 3rem;
+    background-color: rgb(248, 100, 63);
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0px 0px 10px 10px;
+    border: none;
 }
