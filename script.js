@@ -16,7 +16,7 @@ form.addEventListener("submit", searchLocation);
 const fetchResults = async (targetLocation) => {
 
     //let url = "http://api.weatherapi.com/v1/current.json?key=3d0547ca221b4069a4622147251910&q=London&aqi=no"; //Static
-    let url = `http://api.weatherapi.com/v1/current.json?key=3d0547ca221b4069a4622147251910&q=${targetLocation}&aqi=no`; // Dynamic
+    let url = `https://api.weatherapi.com/v1/current.json?key=3d0547ca221b4069a4622147251910&q=${targetLocation}&aqi=no`; // Dynamic
 
     const res = await fetch(url);
 
